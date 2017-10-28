@@ -16,11 +16,11 @@ package com.example.umutkazan.worksheet;
 
 public class SearchMovie {
 
-    final private static String API_KEY = "b43ca88b0be44ba6a03ffe8484ed0d0c";
+    final private static String API_KEY = "YOUR_API_KEY";
     private static String query = "https://api.themoviedb.org/3/search/movie?api_key=" + API_KEY + "&query=";
     private static String pageString = "&page=";
 
-    private static String API_FULL_KEY  = "?api_key=b43ca88b0be44ba6a03ffe8484ed0d0c";
+    private static String API_FULL_KEY  = "?api_key=YOUR_API_KEY";
     private static String movieDetails = "https://api.themoviedb.org/3/movie/";
 
     private static String response;
@@ -107,7 +107,7 @@ public class SearchMovie {
     public static JSONObject getRecommendedMoviesFromID(String id)
     {
         String url1 = "https://api.themoviedb.org/3/movie/";
-        String url2 = "/recommendations?api_key=b43ca88b0be44ba6a03ffe8484ed0d0c&page=1";
+        String url2 = "/recommendations?api_key=YOUR_API_KEY&page=1";
         try
         {
             response = null;
